@@ -2,272 +2,657 @@
 <html lang="en">
 
 <head>
+  <title>Park's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.bundle.css">
+  <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
+  <style>
+    .mgat{
+      display: flex;
+      justify-content: center;
+      padding: 5px !important;
+    }
+    .hv:hover{
+      -webkit-transition: -webkit-clip-path 0.25s ease-out;
+      -webkit-clip-path: inset(2rem);
+      clip-path: inset(2rem);
+      color: black;
+    }
+    .pjtitle{
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-bottom: 10px;
+    }
+    .edu_date{
+      font-size: 16px;
+      font-weight: 700;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .mbs{
+      margin-bottom: 15px;
+    }
+    .edu_detail{
+      font-size: 17px;
+      font-weight: 300;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-top: 3px;
+      margin-bottom: 7px;
+    }
+    .mts{
+      margin-top: 20px;
+      margin-bottom: 5px !important;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 700;
+    }
+    .pdat{
+      padding: 20px 32px !important;
+    }
+    .it{
+      text-align: center;
+    }
+    .mrs{
+      margin-right: 25px;
+    }
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Stylish Portfolio - Start Bootstrap Template</title>
-
-  <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom Fonts -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-  <link href="scss/otff_fonts.scss" rel="stylesheet">
+  </style>
 </head>
 
-<body id="page-top">
-
-  <!-- Navigation -->
-  <a class="menu-toggle rounded" href="#">
-    <i class="fas fa-bars"></i>
-  </a>
-  <nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-      <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">About</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Services</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Contact</a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Header -->
-  <header class="masthead d-flex">
-    <div class="container my-auto">
-      <h1 class="mb-3" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#dddddd">Park KwonEyng</h1>
-      <h3 class="mb-5" style="font-family: monospace; color:#dddddd">
-        불편함을 발판삼아 성장하는 개발자 박권응입니다.
-      </h3>
-
-      <h5 class="mb-2" style="font-family:'Times New Roman', Times, serif;color:#888888;">Phone : 010 - 7760 - 6820</h4>
-      <h5 class="mb-3" style="font-family:'Times New Roman', Times, serif;color:#888888;">E-mail : nan308@naver.com</h4>
-      </div>
-    <div class="overlay"></div>
-  </header>
-
-  <!-- About -->
-  <section class="content-section bg-light" id="about">
-    <div class="container">
-      <h1 class="mb-5 text-center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Profile</h1>
-      <div class="row" style="font-family: monospace;">
-        <div class="col-lg-6 mx-auto">
-          <h2 class="mb-5 text-center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Education</h2>
-          <p class="mb-1" style="font-size: 14px; font-weight: 700;"> 2012. 03 ~ 2019. 08 
-          <p class="mb-4" style="font-size: 17px; font-weight: 500;"> 인하대학교 산업공학 전공
-          <p class="mb-1" style="font-size: 14px; font-weight: 700;"> 2016. 12 ~ 2017. 02
-          <p class="mb-4" style="font-size: 17px; font-weight: 500;">SW 융합 서비스 기획과 시큐어 코딩 융합전문가 양성과정
-          <p class="mb-1" style="font-size: 14px; font-weight: 700;">2017. 07 ~ 2018. 09
-          <p class="mb-4" style="font-size: 16px; font-weight: 500;">KG ITBANK - JSP Programming 
-          <p class="mb-1" style="font-size: 14px; font-weight: 700;">2019. 07 ~ 
-            <p class="mb-4" style="font-size: 17px; font-weight: 500;">삼성 청년 SW 아카데미 </p>
+<body>
+  <div class="navbar-item" style="position: fixed; top: 0px; right: 0px;">
+      <a href="https://github.com/kwoneyng" class="icon is-large has-text-light">
+        <i class="fab fa-2x fa-github"></i>
+      </a>
+    </div>
+  
+  <section class="hero is-primary">
+    <div style="background-image: url('./img/bg-masthead.png'); height: 700px;">
+      <div class="container">
+        <div class="columns">
+          <div class="column" style="position: absolute; top: 180px;">
+            <h1 style="font-size: 80px; margin-bottom: 8px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 700;">
+              Kwoneyng Park
+            </h1>
+            <h2 style="text-align: left; font-size: 25px; margin-bottom: 40px;">
+              불편함을 발판삼아 성장하는 개발자 박권응입니다.
+            </h2>
+            <h2 style="text-align: left; font-size: 18px; color: #999999;">
+              Phone : 010-7760-6820
+            </h2>
+            <h2 style="text-align: left; font-size: 18px; color: #999999;">
+              E-mail : nan308@naver.com
+            </h2>
+            <!-- <p>
+              <a href="docs/resume.txt" class="icon has-text-light">
+                <i class="fas fa-file-word"></i> <strong>Resume</strong>
+              </a>
+            </p> -->
           </div>
-          <div class="col-lg-6 mx-auto">
-            <h2 class="mb-3 text-center" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Skill</h2>
-            <p class="mb-1" style="font-size: 15px; font-weight: 700;"> Language</p>
-            <img src="./img/Language.PNG" alt="" style="width: 80%; height: 20%;">
-            <p class="mt-1" style="font-size: 15px; font-weight: 700;"> Web</p>
-            <img src="./img/Web.PNG" alt="" style="width: 70%; height: 16%;">
-            <p class="mt-1" style="font-size: 15px; font-weight: 700;"> Collaboration</p>
-            <img src="./img/collabo.PNG" alt="" style="width: 40%; height: 20%;">      
-          </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <!-- <section class="content-section bg-primary text-white text-center" id="services">
-    <div class="container">
-      <div class="content-section-heading">
-        <h3 class="text-secondary mb-0">Services</h3>
-        <h2 class="mb-5">What We Offer</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-screen-smartphone"></i>
-          </span>
-          <h4>
-            <strong>Responsive</strong>
-          </h4>
-          <p class="text-faded mb-0">Looks great on any screen size!</p>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-pencil"></i>
-          </span>
-          <h4>
-            <strong>Redesigned</strong>
-          </h4>
-          <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-like"></i>
-          </span>
-          <h4>
-            <strong>Favorited</strong>
-          </h4>
-          <p class="text-faded mb-0">Millions of users
-            <i class="fas fa-heart"></i>
-            Start Bootstrap!</p>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-mustache"></i>
-          </span>
-          <h4>
-            <strong>Question</strong>
-          </h4>
-          <p class="text-faded mb-0">I mustache you a question...</p>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- Callout -->
-  <!-- <section class="callout">
-    <div class="container text-center">
-      <h2 class="mx-auto mb-5">Welcome to
-        <em>your</em>
-        next website!</h2>
-      <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download Now!</a>
-    </div>
-  </section> -->
-
-  <!-- Portfolio -->
-  <section class="content-section" id="portfolio">
-    <div class="container">
-      <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">Portfolio</h3>
-        <h2 class="mb-5">Recent Projects</h2>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Stationary</h2>
-                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Ice Cream</h2>
-                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Strawberries</h2>
-                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Workspace</h2>
-                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
-          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <!-- <section class="content-section bg-primary text-white">
-    <div class="container text-center">
-      <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-      <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
-      <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
-    </div>
-  </section> -->
-
-  <!-- Map -->
-  <!-- <section id="contact" class="map">
-    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-    <br />
-    <small>
-      <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-    </small>
-  </section> -->
-
-  <!-- Footer -->
-  <footer class="footer text-center">
+  <section class="section">
     <div class="container">
-      <ul class="list-inline mb-5">
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#">
-            <i class="icon-social-facebook"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#">
-            <i class="icon-social-twitter"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="#">
-            <i class="icon-social-github"></i>
-          </a>
-        </li>
-      </ul>
-      <!-- <p class="text-muted small mb-0">Copyright &copy; Your Website 2019</p> -->
+      <h1 class="title" style="margin-top: 80px;">Education</h1>
+      <hr/>
+      <h1 class="edu_date">2012. 03 ~ 2019. 08</h1>
+      <h1 class="edu_detail">인하대학교 산업공학 전공</h1>
+      <span class="tag mbs">PHP</span> <span class="tag mbs">SQL</span>
+      <h1 class="edu_date">2016. 12 ~ 2017. 02</h1>
+      <h1 class="edu_detail">SW 융합 서비스 기획과 시큐어 코딩 융합 전문가 양성과정 6</h1>
+      <span class="tag mbs">CSS</span> <span class="tag mbs">JavaScript</span> <span class="tag mbs">Java</span>
+      <h1 class="edu_date">2017. 07 ~ 2017. 10</h1>
+      <h1 class="edu_detail">KG ITBANK - JSP Programming</h1>
+      <span class="tag mbs">Java</span> <span class="tag mbs">JSP</span>
+      <h1 class="edu_date">2019. 07 ~ </h1>
+      <h1 class="edu_detail">삼성 청년 SW 아카데미</h1>
+      <span class="tag">Vue</span> <span class="tag ">Django</span> <span class="tag ">Python</span> <span class="tag ">Sass</span> <span class="tag">Jira</span> <span class="tag">Git</span> 
     </div>
-  </footer>
+  </section>
+  <section class="section">
+    <div class="container">
+      <h1 class="title" style="margin-top: -10px;">Skills</h1>
+      <hr />
+      <h1 class="title is-4">Languages</h1>
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-12">
+          <div class="tile mbs">
+            <div class="tile is-2 mrs mrs">
+              <article class="tile is-child notification pdat">
+                <figure class="image is-1by1">
+                  <img src="img/python.png">
+                </figure>
+                <p class="modal-card-title it it mts">Python</p>
+                <p class="it">Advanced</p>
+              </article>
+            </div>
+            <div class="tile is-2 mrs">
+              <article class="tile pdat is-child notification">
+                <figure class="image is-1by1">
+                  <img src="img/javascript.png">
+                </figure>
+                <p class="modal-card-title it mts">JavaScript</p>
+                <p class="it">Intermediate</p>
+              </article>
+            </div>
+            <div class="tile is-2 mrs">
+              <article class="tile pdat is-child notification">
+                <figure class="image is-1by1">
+                  <img src="img/bixby.png">
+                </figure>
+                <p class="modal-card-title it mts">Bixby</p>
+                <p class="it">Intermediate</p>
+              </article>
+            </div>
+            <div class="tile is-2 mrs">
+              <article class="tile pdat is-child notification">
+                <figure class="image is-1by1">
+                  <img src="img/sass.png">
+                </figure>
+                <p class="modal-card-title it mts">Sass</p>
+                <p class="it">Intermediate</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="title is-4 tt">Web Framework</h1>
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-12">
+          <div class="tile mbs">
+            <div class="tile is-2 mrs">
+              <article class="tile is-child pdat notification pdat">
+                <figure class="image is-1by1">
+                  <img src="img/vue.png">
+                </figure>
+                <p class="title mts">Vue</p>
+                <p class="it">Advanced</p>
+              </article>
+            </div>
+            <div class="tile is-2 mrs">
+              <article class="tile pdat is-child notification">
+                <figure class="image is-1by1">
+                  <img src="img/vuetify.webp">
+                </figure>
+                <p class="title mts">Vuetify</p>
+                <p class="it">Intermediate</p>
+              </article>
+            </div>
+            <div class="tile is-2 mrs">
+              <article class="tile pdat is-child notification">
+                <figure class="image is-1by1">
+                  <img src="img/nodejs.png">
+                </figure>
+                <p class="title mts">node.js</p>
+                <p class="it">Intermediate</p>
+              </article>
+            </div>
+            <div class="tile is-2 mrs">
+              <article class="tile pdat is-child notification">
+                <figure class="image is-1by1">
+                  <img src="img/django.png">
+                </figure>
+                <p class="title mts">Django</p>
+                <p class="it">Intermediate</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="title is-4 tt">Collaboration Tool</h1>
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-12">
+          <div class="tile mbs">
+            <div class="tile is-2 mrs">
+              <article class="tile is-child pdat notification pdat">
+                <figure class="image is-1by1">
+                  <img src="img/git.png">
+                </figure>
+                <p class="title mts">Git</p>
+                <p class="it">Advanced</p>
+              </article>
+            </div>
+            <div class="tile is-2 mrs">
+              <article class="tile pdat is-child notification">
+                <figure class="image is-1by1">
+                  <img src="img/jira.png">
+                </figure>
+                <p class="title mts">Jira</p>
+                <p class="it">Intermediate</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Projects</h1>
+      <hr />
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-12">
+          <div class="tile">
+            <div class="tile is-parent hv">
+              <article class="tile is-child pdat notification">
+                <p class="pjtitle">MyFonts</p>
+                <figure class="image is-16by9">
+                  <img class="modal-trigger" data-target="project-1-modal" src="img/MyFonts.PNG">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent hv">
+              <article class="tile is-child pdat notification">
+                <p class="pjtitle">취뽀냥이</p>
+                <figure class="image is-16by9">
+                  <img class="modal-trigger" data-target="project-2-modal" src="img/chibbo.PNG">
+                </figure>
+              </article>
+            </div>
+            <!-- <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Project title</p>
+                <figure class="image is-16by9">
+                  <img class="modal-trigger" data-target="project-3-modal" src="img/project-3-cover.png">
+                </figure>
+              </article>
+            </div> -->
+          </div>
+          <div class="tile">
+            <div class="tile is-parent hv">
+              <article class="tile is-child pdat notification">
+                <p class="pjtitle">Artweek</p>
+                <figure class="image is-16by9">
+                  <img class="modal-trigger" data-target="project-3-modal" src="img/artweek.PNG">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent hv">
+              <article class="tile is-child pdat notification">
+                <p class="pjtitle">취뽀냥이</p>
+                <figure class="image is-16by9">
+                  <img class="modal-trigger" data-target="project-4-modal" src="">
+                </figure>
+              </article>
+            </div>
+            <!-- <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Project title</p>
+                <figure class="image is-16by9">
+                  <img class="modal-trigger" data-target="project-3-modal" src="img/project-3-cover.png">
+                </figure>
+              </article>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
+  <section class="section">
+    <div class="container">
+      <nav class="level">
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="#" class="icon" onclick="return false;">
+              <i class="fas fa-2x fa-mobile-alt"></i>
+            </a>
+            <p class="heading"><a href="#" onclick="return false;">+82-10-7760-6820</a></p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="https://github.com/kwoneyng" class="icon">
+              <i class="fab fa-2x fa-github"></i>
+            </a>
+            <p class="heading"><a href="https://github.com/kwoneyng">github.com/kowneyng</a></p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="mailto:nan308@naver.com" class="icon">
+              <i class="fas fa-2x fa-envelope"></i>
+            </a>
+            <p class="heading"><a href="mailto:nan308@naver.com">nan308@naver.com</a></p>
+          </div>
+        </div>
+<!--         <div class="level-item has-text-centered">
+          <div>
+            <a href="https://www.linkedin.com/in/markmacneilhfx" class="icon is-large">
+              <i class="fab fa-2x fa-linkedin-in"></i>
+            </a>
+            <p class="heading"><a href="https://www.linkedin.com/in/markmacneilhfx">linkedin</a></p>
+          </div>
+        </div> -->
+      </nav>
+    </div>
+  </section>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Modals -->
+  <div id="project-1-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title it">MyFonts</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <div id="project-1-modal-carousel" class="carousel">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/Myfonts1.PNG">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/Myfonts2.PNG">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/Myfonts3.PNG">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/Myfonts4.gif">
+          </figure>
+        </div>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/stylish-portfolio.min.js"></script>
+        <div class="content">
+          <h6>역할</h6>
+          <p style="margin-bottom: 0;">이미지 처리, API 통신, CNN 모델구현</p>
+          <p>폰트파일(ttf) 파일 생성</p>
+          <h6>주요 기능</h6>
+          <p style="margin-bottom: 0;">- 글꼴 검색 및 추천</p>
+          <p>- 사용자의 손글씨 210자를 제공받아 사용자의 email로 ttf파일 전송</p>
+          <h6>개발 환경</h6>
+          <div class="tags">
+            <span class="tag">Vue</span>
+            <span class="tag">Vuex</span>
+            <span class="tag">Sass</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Tensorflow</span>
+            <span class="tag">FontForge</span>
+            <span class="tag">Git</span>
+            <span class="tag">Jira</span>
+          </div>
+          <h6>개발 내용</h6>
+          <p style="margin-bottom: 0;">- ttf파일에서 글자 이미지 추출, Tensorflow를 이용한 CNN 구현</p>
+          <p style="margin-bottom: 0;">- 이미지를 이용해 각 글자 유니코드별 svg파일 생성 및 ttf파일 생성</p>
+          <p>- 이미지 자동 크기 맞춤 기능, 크롭 기능 구현</p>
+          <h6>참고 링크</h6>
+          <p>
+          (SSAFY 보안서약에 의거 비공개처리)
+          </p>
+        </div>
 
+      </section>
+      <footer class="modal-card-foot mgat">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-2-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title it">취뽀냥이</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+
+        <div id="project-2-modal-carousel" class="carousel">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/chibbo1.PNG">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/chibbo2.PNG">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/chibbo3.PNG">
+          </figure>
+        </div>
+
+        <div class="content">
+          <h6>역할</h6>
+          <p style="margin-bottom: 0;">Vue를 이용한 컴포넌트, 페이지 생성</p>
+          <p>API 통신을 통한 CRUD기능 구현, 태그를 이용한 검색기능 구현</p>
+          <h6>주요 기능</h6>
+          <p style="margin-bottom: 0;">- 로그인 한번으로 사용자의 이력내용을 어디서나 확인가능</p>
+          <p style="margin-bottom: 0;">- 태그 기능을 이용한 자소서 검색</p>
+          <p>- 네이버 메일 API를 통한 자소서 내보내기 기능</p>
+          <h6>개발 환경</h6>
+          <div class="tags">
+            <span class="tag">Vue</span>
+            <span class="tag">Vuex</span>
+            <span class="tag">Vuetify</span>
+            <span class="tag">Sass</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Git</span>
+            <span class="tag">Jira</span>
+          </div>
+          <h6>개발 내용</h6>
+          <p style="margin-bottom: 0;">- Vue, Vuetify를 이용한 컴포넌트, 페이지 생성</p>
+          <p style="margin-bottom: 0;">- API 통신과 Vuex, JavaScript를 이용한 동적 페이지 구현</p>
+          <p style="margin-bottom: 0;">- 태그 검색기능 구현</p>
+          <p>- 컴포넌트 애니메이션 효과 적용</p>
+          <h6>참고 링크</h6>
+          <p>
+            <a href="https://www.youtube.com/watch?v=1cyQnk2KHKc&feature=youtu.be">https://www.youtube.com/watch?v=1cyQnk2KHKc&feature=youtu.be</a><br/>
+          </p>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot mgat">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-3-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title it">Artweek</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-3-modal-carousel" class="carousel">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/artweek2.PNG">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/artweek1.PNG">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/artweek3.PNG">
+          </figure>
+        </div>
+
+        <div class="content">
+          <h6>역할</h6>
+          <p style="margin-bottom: 0;">Bixby언어를 활용한 layout, View 생성</p>
+          <p>Bixby capsule을 통한 위치 정보 수신 및 DB필터링을 통한 LBS 구현</p>
+          <h6>주요 기능</h6>
+          <p style="margin-bottom: 0;">- 사용자의 발화를 분석하여 원하는 공연, 전시정보 제공</p>
+          <p style="margin-bottom: 0;">- 위치, 가격, 날짜별 검색기능 구현</p>
+          <p>- 플렛폼 버튼을 통한 티켓 구매페이지로 이동 </p>
+          <h6>개발 환경</h6>
+          <div class="tags">
+            <span class="tag">Bixby</span>
+            <span class="tag">Bixby Developer</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Heroku</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Notion</span>
+
+          </div>
+          <h6>개발 내용</h6>
+          <p style="margin-bottom: 0;">- Bixby언어를 활용해 layout-macro, layout, view 생성</p>
+          <p style="margin-bottom: 0;">- Bixby capsule을 활용한 기능구현(위치정보, browser 연동)</p>
+          <p style="margin-bottom: 0;">- API를 이용한 특정 장소 위치정보검색(강남역 등) 및 LBS 구현</p>
+          <p>- 검색결과에서 티켓 판매 플렛폼 추출, 링크 제공</p>
+          <h6>참고 링크</h6>
+          <p>
+            <a href="https://github.com/makeartweek/bixby">https://github.com/makeartweek/bixby</a><br/>
+          </p>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot mgat">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+  <div id="project-4-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title it">Artweek</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-4-modal-carousel" class="carousel">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/artweek2.PNG">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/artweek1.PNG">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/artweek3.PNG">
+          </figure>
+        </div>
+
+        <div class="content">
+          <h6>역할</h6>
+          <p style="margin-bottom: 0;">Bixby언어를 활용한 layout, View 생성</p>
+          <p>Bixby capsule을 통한 위치 정보 수신 및 DB필터링을 통한 LBS 구현</p>
+          <h6>주요 기능</h6>
+          <p style="margin-bottom: 0;">- 사용자의 발화를 분석하여 원하는 공연, 전시정보 제공</p>
+          <p style="margin-bottom: 0;">- 위치, 가격, 날짜별 검색기능 구현</p>
+          <p>- 플렛폼 버튼을 통한 티켓 구매페이지로 이동 </p>
+          <h6>개발 환경</h6>
+          <div class="tags">
+            <span class="tag">Bixby</span>
+            <span class="tag">Bixby Developer</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Heroku</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Notion</span>
+
+          </div>
+          <h6>개발 내용</h6>
+          <p style="margin-bottom: 0;">- Bixby언어를 활용해 layout-macro, layout, view 생성</p>
+          <p style="margin-bottom: 0;">- Bixby capsule을 활용한 기능구현(위치정보, browser 연동)</p>
+          <p style="margin-bottom: 0;">- API를 이용한 특정 장소 위치정보검색(강남역 등) 및 LBS 구현</p>
+          <p>- 검색결과에서 티켓 판매 플렛폼 추출, 링크 제공</p>
+          <h6>참고 링크</h6>
+          <p>
+            <a href="https://github.com/makeartweek/bixby">https://github.com/makeartweek/bixby</a><br/>
+          </p>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot mgat">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-5-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title it">Project title</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-5-modal-carousel" class="carousel">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/1.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/2.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/3.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat.</p>
+          <div class="tags">
+            <span class="tag">angular</span>
+            <span class="tag">mongo</span>
+            <span class="tag">typscript</span>
+            <span class="tag">node</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-6-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title it">Project title</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-6-modal-carousel" class="carousel">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/1.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/2.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="img/carousel/3.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat.</p>
+          <div class="tags">
+            <span class="tag">angular</span>
+            <span class="tag">mongo</span>
+            <span class="tag">typscript</span>
+            <span class="tag">node</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <a href="https://github.com/mmacneil/devfolio" target="_blank" class="icon has-text-primary">
+          <i class="fab fa-github"></i> <strong>devfolio</strong></a>
+      </p>
+    </div>
+  </footer> -->
+
+  <script src="js/bundle.js"></script>
 </body>
-
 </html>
